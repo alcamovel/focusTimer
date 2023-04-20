@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+}
+
+main {
+  display: flex;
+  width: 80.7rem;
+  justify-self: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12rem;
+  line-height: 14.8rem;
+  color: #323238;
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  gap: 3.2rem;
+}
+
+#cards {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-areas: "A B";
+}
+
+.cardA, 
+.cardB,
+.cardC,
+.cardD {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  background-color: #e1e1e6;
+}
+
+.cardA:focus, 
+.cardB:focus,
+.cardC:focus,
+.cardD:focus {
+  background-color:#02799D;
+
+}
+
+.cardA:focus svg path, 
+.cardB:focus svg path,
+.cardC:focus svg path,
+.cardD:focus svg path {
+  fill: #ffffff;
+}
